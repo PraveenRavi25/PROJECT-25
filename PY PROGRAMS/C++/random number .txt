@@ -1,0 +1,41 @@
+#include<cstdlib>
+#include <iostream>
+using namespace std;
+int main() {
+    int n;
+    cin >> n;
+    int x= rand()%n;
+    int flag=0;
+    for (int i=0;i<5;i++){
+       int y;
+       cout <<"ENTER YOUR CHOICE:";
+        cin >>y;
+        if(x==y){
+            cout<<"RIGHT ANSWER";
+            flag = 1;
+            break;
+        }
+        else {
+            cout<<"TRY AGAIN\n";
+        }
+    }
+    if(flag == 0){
+    cout<<"BETTER LUCK NEXT TIME";
+}
+    return 0;
+}				
+
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include<cstdlib>
+using namespace std;
+int main() {
+    int n;
+    cin >>n;
+    for (int i =0;i<n;i++){
+     std::cout << rand()%n<<" ";
+}
+    return 0;
+}

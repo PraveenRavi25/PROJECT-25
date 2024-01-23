@@ -1,0 +1,97 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+
+int main() {
+    int a,b;
+    char c;
+    std::cin >> a >> b;
+    std::cin >>c;
+    std::cout<< "ANS=";
+    if (c=='+'){
+        std::cout << a + b;
+    }
+    else if (c=='-'){
+        std::cout << a - b;
+    }
+    else if (c =='*'){
+        std::cout << a * b;
+    }
+     else if (c=='/'){
+        std::cout <<a / b;
+     }
+      else {
+        std::cout << "syntax error";
+      }
+
+    return 0;
+}
+
+
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+    int a,b;
+    char c;
+    cin >>a>>b;
+    cin >>c;
+    cout <<"ANS=";
+    switch(c){
+        case '+':
+        cout << a+b;
+        break;
+        case '-':
+        cout << a-b;
+        break;
+        case '*':
+        cout << a*b;
+        break;
+        case '/':
+        cout << a/b;
+        break;
+        
+    }
+
+    return 0;
+}
+
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+
+
+int main() {
+    int a,b;
+    char c;
+    int n;
+    std::cin>>n;
+    for (int i=0;i<n;i++){
+    std::cout <<"enter first number=";
+    std::cin >> a;
+    std::cout <<"enter second number=";
+     std::cin >>b;
+    std::cout <<"enter operator=";
+    std::cin >>c;
+    std::cout<< "ANS=";
+    if (c=='+'){
+        std::cout << a + b;
+    }
+    else if (c=='-'){
+        std::cout << a - b;
+    }
+    else if (c =='*'){
+        std::cout << a * b;
+    }
+     else if (c=='/'){
+        std::cout <<a / b;
+     }
+      else {
+        std::cout << "syntax error";
+     }std::cout <<"\n";
+    }
+
+    return 0;
+}

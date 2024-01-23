@@ -1,0 +1,78 @@
+Swapping pointer using function
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+void swap(int *a,int *b){
+    int temp=*a;
+    *a=*b;
+    *b=temp;
+    cout<<*a<<"\n"<<*b;
+}
+int main() {
+    int a,b;
+    cout<<"enter the number:\n";
+    cin>>a;
+    cout<<"enter the number2:\n";
+    cin>>b;
+    swap(&a,&b);
+
+    return 0;
+}
+
+
+Address verifying without pointer 
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+void swap(int a,int b){
+    int temp = a;
+    a = b;
+    b = temp;
+    cout << "The number after swapping:\n";
+    cout << a << "\n" << b << "\n";
+    cout << "Address of a :" << &a << "\n";
+    cout << "Address of b :" << &b << "\n";
+}
+ 
+int main() {
+    // Write C++ code here
+    int a,b;
+    cout << "Enter Number 1 :\n";
+    cin >> a ;
+    cout << "Address of a :" << &a << "\n";
+    cout << "Enter Number 2 :\n";
+    cin >> b ;
+    cout << "Address of b :" << &b << "\n";
+    swap(a, b);
+}
+
+
+Address verifying pointer using function
+
+#include <iostream>
+using namespace std;
+
+void swap(int* a,int* b){
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+    cout << "The number after swapping:\n";
+    cout << *a << "\n" << *b << "\n";
+    cout << "Address of a :" << a << "\n";
+    cout << "Address of b :" << b << "\n";
+}
+ 
+int main() {
+    // Write C++ code here
+    int a,b;
+    cout << "Enter Number 1 :\n";
+    cin >> a ;
+    cout << "Address of a :" << &a << "\n";
+    cout << "Enter Number 2 :\n";
+    cin >> b ;
+    cout << "Address of b :" << &b << "\n";
+    swap(&a, &b);
+}
